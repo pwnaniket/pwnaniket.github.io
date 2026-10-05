@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aniket Pawan — Full-Stack & Backend Developer</title>
+<meta name="description" content="Aniket Pawan — Computer Science student building practical full-stack and backend software. Node.js, Express, MongoDB, REST APIs.">
+<meta property="og:title" content="Aniket Pawan — Portfolio">
+<meta property="og:description" content="Computer Science student building practical full-stack and backend software.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#06090d;--bg2:#0b1117;--card:rgba(255,255,255,.04);--bd:rgba(255,255,255,.09);--tx:#f4f5f8;--mu:#9aa1b2;--a:#2dd4bf;--b:#38bdf8;--g:linear-gradient(120deg,#14b8a6,#38bdf8)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px));height:100%}
+*,*:before,*:after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(600px circle at var(--mx,50%) var(--my,20%),rgba(45,212,191,.09),transparent 60%);pointer-events:none;z-index:0}
+a{color:inherit;text-decoration:none}
+.w{max-width:1120px;margin:0 auto;padding:0 22px;position:relative;z-index:1}
+section{padding:96px 0}
+.eyebrow{color:var(--a);font:600 13px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase}
+h2{font-size:clamp(28px,4vw,40px);letter-spacing:-.02em;margin:12px 0 40px;line-height:1.15}
+.grad{background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{position:sticky;top:0;z-index:50;background:rgba(6,9,13,.72);backdrop-filter:blur(14px);border-bottom:1px solid var(--bd);padding-top:env(safe-area-inset-top,0px)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:700;letter-spacing:-.02em}
+.links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.links a{padding:8px 12px;border-radius:99px;color:var(--mu);font-size:14px;white-space:nowrap;transition:.2s}
+.links a:hover{color:var(--tx)}
+.links a.on{color:var(--tx);background:var(--card);box-shadow:inset 0 0 0 1px var(--bd)}
+@media(max-width:860px){.logo{display:none}.links{width:100%}}
+.hero{padding:88px 0 72px}
+.hero .w{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+@media(max-width:860px){.hero .w{grid-template-columns:1fr}}
+h1{font-size:clamp(38px,6vw,64px);line-height:1.05;letter-spacing:-.035em;margin:18px 0}
+.sub{font-size:clamp(18px,2.2vw,22px);color:#d6d9e3;margin:0 0 14px}
+.mu{color:var(--mu)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 22px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:12px;font-weight:600;font-size:15px;border:1px solid var(--bd);background:var(--card);transition:transform .2s,box-shadow .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.25)}
+.btn.p{background:var(--g);border-color:transparent;color:#042f2e}
+.btn.p:hover{box-shadow:0 10px 30px -8px rgba(45,212,191,.7)}
+.btn.s{padding:8px 14px;font-size:13px;border-radius:10px}
+.soc{display:flex;gap:18px;color:var(--mu);font-size:14px}
+.soc a:hover{color:var(--tx)}
+.term{background:rgba(11,17,23,.8);border:1px solid var(--bd);border-radius:16px;overflow:hidden;box-shadow:0 30px 80px -30px rgba(45,212,191,.35);animation:fl 7s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-8px)}}
+.bar{display:flex;gap:6px;padding:12px 14px;border-bottom:1px solid var(--bd)}
+.bar i{width:10px;height:10px;border-radius:50%;background:#2b2f3d}
+.term pre{margin:0;padding:18px;font:13px/1.8 ui-monospace,Menlo,monospace;overflow-x:auto;color:#c9cfe0}
+.k{color:#38bdf8}.f{color:#2dd4bf}.s2{color:#7ee0b0}
+.cur{display:inline-block;width:7px;height:14px;background:var(--a);vertical-align:middle;animation:bl 1s steps(2) infinite}
+@keyframes bl{50%{opacity:0}}
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:40px}
+@media(max-width:860px){.about{grid-template-columns:1fr}}
+.about p{color:#c3c8d6;margin:0 0 16px;font-size:17px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start}
+.chip{padding:6px 12px;border-radius:99px;border:1px solid var(--bd);background:var(--card);font-size:13px;color:#d6d9e3}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.gl{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:22px;backdrop-filter:blur(8px)}
+.gl h3{margin:0 0 14px;font-size:14px;color:var(--mu);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.tl{display:flex;flex-wrap:wrap;gap:10px}
+.t{display:flex;align-items:center;gap:8px;padding:7px 12px 7px 7px;border-radius:12px;border:1px solid var(--bd);background:rgba(255,255,255,.03);font-size:14px;transition:.2s}
+.t:hover{transform:translateY(-3px);border-color:var(--a);background:rgba(45,212,191,.1)}
+.t b{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;font:700 11px ui-monospace,monospace;background:var(--g);color:#042f2e;transition:transform .25s}
+.t:hover b{transform:rotate(-8deg) scale(1.1)}
+.proj{display:grid;grid-template-columns:1fr 1fr;gap:36px;padding:28px;border-radius:24px;margin-bottom:28px;align-items:center;transition:transform .3s,border-color .3s}
+.proj:hover{transform:translateY(-4px);border-color:rgba(45,212,191,.4)}
+.proj.rev .vis{order:2}
+.proj.rev .info{order:1}
+.proj.small{grid-template-columns:1fr 1fr}
+@media(max-width:860px){.proj,.proj.small{grid-template-columns:1fr;padding:18px}.proj.rev .vis{order:0}}
+.tag{font:12px ui-monospace,monospace;color:var(--b)}
+.proj h3{font-size:24px;margin:6px 0 10px;letter-spacing:-.02em;line-height:1.2}
+.proj ul{margin:14px 0 18px;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:4px 14px;font-size:13.5px;color:#c3c8d6}
+@media(max-width:520px){.proj ul{grid-template-columns:1fr}}
+.proj li:before{content:"▹ ";color:var(--a)}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
+.badges span{font-size:12px;padding:3px 9px;border-radius:6px;background:rgba(45,212,191,.12);color:#99f0e3}
+.vis{overflow:hidden;border-radius:14px;border:1px solid var(--bd);background:var(--bg2)}
+.vis>div{transition:transform .6s}
+.proj:hover .vis>div{transform:scale(1.04)}
+.mk{padding:12px;font-size:11px;color:#c9cfe0;min-height:250px}
+.mk .tb{display:flex;gap:6px;margin-bottom:10px;align-items:center}
+.mk .tb i{width:7px;height:7px;border-radius:50%;background:#2b2f3d}
+.mk .tb em{margin-left:auto;font-style:normal;color:var(--mu)}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.cd{background:rgba(255,255,255,.05);border:1px solid var(--bd);border-radius:8px;padding:8px}
+.pill{display:inline-block;padding:1px 7px;border-radius:99px;font-size:10px}
+.ok{background:rgba(80,220,150,.15);color:#7ee0b0}.wt{background:rgba(255,190,80,.15);color:#ffc86b}.no{background:rgba(255,100,120,.15);color:#ff8c9c}
+.ch{display:flex;align-items:flex-end;gap:5px;height:60px;margin-top:8px}
+.ch i{flex:1;background:var(--g);border-radius:3px 3px 0 0;opacity:.85}
+.pst{aspect-ratio:2/3;border-radius:7px;display:flex;align-items:flex-end;padding:5px;font-size:10px}
+.seats{display:grid;grid-template-columns:repeat(10,1fr);gap:3px;margin:8px 0}
+.seats i{aspect-ratio:1;border-radius:3px;background:#2b2f3d}
+.seats i.x{background:#4a4f63}.seats i.sel{background:var(--a)}
+.ln{height:6px;border-radius:3px;background:#2b2f3d;margin:6px 0}
+.tk{border:1px dashed rgba(255,255,255,.25);border-radius:8px;padding:8px}
+.tm{display:grid;grid-template-columns:130px 1fr;gap:28px;margin-bottom:24px;position:relative}
+.tm .dt{color:var(--mu);font:13px ui-monospace,monospace;padding-top:22px}
+@media(max-width:640px){.tm{grid-template-columns:1fr;gap:6px}.tm .dt{padding:0}}
+.gl h4{margin:0 0 4px;font-size:18px}
+.dl{border-left:2px solid var(--bd);padding-left:22px;margin-left:4px}
+.cert{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.cert .gl{display:flex;flex-direction:column;gap:6px;transition:.25s}
+.cert .gl:hover{transform:translateY(-4px);border-color:rgba(45,212,191,.4)}
+.cta{text-align:center;padding:64px 28px;border-radius:28px;background:radial-gradient(500px circle at 50% 0,rgba(45,212,191,.18),transparent 70%),var(--card);border:1px solid var(--bd)}
+.cta h2{margin-bottom:16px}
+.cta p{max-width:620px;margin:0 auto 28px;color:#c3c8d6}
+.cta .btns{justify-content:center}
+.ct{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 32px;color:var(--mu);font-size:15px}
+footer{padding:32px 0;text-align:center;color:var(--mu);font-size:13px;border-top:1px solid var(--bd)}
+#top{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));width:44px;height:44px;border-radius:50%;border:1px solid var(--bd);background:rgba(11,17,23,.85);color:var(--tx);cursor:pointer;opacity:0;pointer-events:none;transition:.25s;z-index:60;font-size:18px}
+#top.show{opacity:1;pointer-events:auto}#top:hover{border-color:var(--a)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--a);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
+
+/* Rose Modern */
+:root{--bg:#0a090d;--bg2:#100e15;--card:rgba(255,255,255,.04);--bd:rgba(255,255,255,.09);--tx:#f6f4f7;--mu:#a29ca9;--a:#ff6b8b;--b:#ffb46b;--g:linear-gradient(120deg,#ff5f8f,#ff9a5c)}
+body{font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(900px 520px at 88% -8%,rgba(255,107,139,.15),transparent 70%),radial-gradient(700px 500px at -10% 35%,rgba(255,154,92,.07),transparent 70%),var(--bg);background-attachment:fixed}
+body:before{background:radial-gradient(480px circle at var(--mx,50%) var(--my,20%),rgba(255,107,139,.08),transparent 60%)}
+h1,h2,.proj h3,.logo,.gl h4{font-family:Sora,"DM Sans",system-ui,sans-serif;font-weight:700;letter-spacing:-.03em}
+.gl h4{font-weight:600;letter-spacing:-.01em}
+.eyebrow{display:inline-block;padding:6px 14px;border-radius:99px;border:1px solid var(--bd);background:var(--card);font:600 12px/1 Sora,sans-serif;letter-spacing:.1em;color:var(--b)}
+.tag,.term pre,.tm .dt{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace}
+.tag{color:var(--b)}
+.btn{border-radius:99px;font-family:"DM Sans",sans-serif;font-weight:600}
+.btn.p{background:var(--g);color:#fff;border-color:transparent}
+.btn.p:hover{box-shadow:0 12px 32px -10px rgba(255,107,139,.65)}
+.btn.s{border-radius:99px}
+.btn:hover{border-color:rgba(255,255,255,.3)}
+nav{background:rgba(10,9,13,.75)}
+.links a.on{background:#fff;color:#0a090d;box-shadow:none}
+.gl{border-radius:22px;background:var(--card)}
+.chip{border-radius:99px;font-family:"DM Sans",sans-serif}
+.gl h3{font-family:Sora,sans-serif;letter-spacing:.08em;font-size:12px}
+.t{border-radius:14px}
+.t b{background:var(--g);color:#fff;border-radius:9px;font-family:"JetBrains Mono",monospace}
+.t:hover{background:rgba(255,107,139,.1);border-color:var(--a)}
+.proj{border-radius:28px}
+.proj:hover,.cert .gl:hover{border-color:rgba(255,107,139,.5)}
+.proj li:before{content:"• ";color:var(--b)}
+.badges span{background:rgba(255,107,139,.12);color:#ffb3c4;border-radius:99px;padding:3px 11px}
+.vis{border-radius:16px}
+.term{border-radius:20px;box-shadow:0 30px 80px -30px rgba(255,107,139,.4)}
+.k{color:#ff9a5c}.f{color:#ff6b8b}.s2{color:#8be0b5}.cur{background:var(--a)}
+.cta{border-radius:32px;background:radial-gradient(520px circle at 50% 0,rgba(255,107,139,.18),transparent 70%),var(--card)}
+#top{border-radius:50%;background:var(--g);color:#fff;border:0}
+::selection{background:rgba(255,107,139,.35)}
+</style>
+</head>
+<body>
+<nav aria-label="Primary"><div class="w"><a class="logo" href="#home">Aniket<span class="grad">.</span>Pawan</a>
+<div class="links" id="nl"><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#training">Training</a><a href="#certifications">Certifications</a><a href="#education">Education</a><a href="#contact">Contact</a></div></div></nav>
+
+<main>
+<header id="home" class="hero"><div class="w">
+<div>
+<span class="eyebrow">Portfolio</span>
+<h1>Hi, I'm <span class="grad">Aniket Pawan</span> 👋</h1>
+<p class="sub">Computer Science &amp; Engineering Student<br>Building scalable web applications &amp; practical software solutions.</p>
+<p class="mu">I'm a Computer Science and Engineering student at Lovely Professional University passionate about full-stack development, backend engineering, cloud technologies and building practical software solutions.</p>
+<div class="btns"><a class="btn p" href="#projects">View My Projects</a><a class="btn" href="#contact">Let's Connect</a></div>
+<div class="soc"><a href="https://github.com/pwnaniket" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/aniii-pwn09" target="_blank" rel="noopener">LinkedIn ↗</a><a href="mailto:aniketpawan09@gmail.com">Email ↗</a></div>
+</div>
+<div class="term" aria-hidden="true"><div class="bar"><i></i><i></i><i></i></div>
+<pre><span class="k">const</span> <span class="f">aniket</span> = {
+  role: <span class="s2">"Full-Stack &amp; Backend Developer"</span>,
+  stack: [<span class="s2">"Node.js"</span>, <span class="s2">"Express"</span>, <span class="s2">"MongoDB"</span>],
+  focus: [<span class="s2">"REST APIs"</span>, <span class="s2">"Auth"</span>, <span class="s2">"Cloud"</span>],
+  building: <span class="s2">"practical software"</span>
+};
+
+app.<span class="f">get</span>(<span class="s2">"/api/projects"</span>, <span class="f">ship</span>);<span class="cur"></span></pre></div>
+</div></header>
+
+<section id="about"><div class="w rv"><span class="eyebrow">About</span><h2>Practical software, built properly.</h2>
+<div class="about"><div>
+<p>I'm pursuing a Bachelor of Technology in Computer Science and Engineering at Lovely Professional University, Phagwara, Punjab, with expected graduation in 2028.</p>
+<p>I enjoy turning ideas into working products, from designing RESTful APIs and database systems to shipping responsive full-stack web applications, while strengthening my problem-solving and cloud &amp; DevOps fundamentals.</p></div>
+<div class="chips"><span class="chip">Software Development</span><span class="chip">Full-Stack Web</span><span class="chip">Backend Development</span><span class="chip">RESTful APIs</span><span class="chip">Database Systems</span><span class="chip">Cloud &amp; DevOps</span><span class="chip">Problem Solving</span><span class="chip">Practical Products</span></div></div></div></section>
+
+<section id="skills"><div class="w"><span class="eyebrow rv">Skills</span><h2 class="rv">Tech stack</h2><div class="sk rv" id="sk"></div></div></section>
+
+<section id="projects"><div class="w"><span class="eyebrow rv">Projects</span><h2 class="rv">Selected work</h2>
+
+<article class="proj gl rv"><div class="vis" aria-label="Resource Hub dashboard mockup"><div class="mk">
+<div class="tb"><i></i><i></i><i></i><em>Resource Hub · Admin</em></div>
+<div class="g3"><div class="cd">Conference Room<br><span class="pill ok">Approved</span></div><div class="cd">Lab Equipment<br><span class="pill wt">Pending</span></div><div class="cd">Projector<br><span class="pill no">Conflict</span></div></div>
+<div class="g3" style="margin-top:8px;grid-template-columns:1fr 1fr"><div class="cd">Approval workflow<br><span class="pill wt">Requested</span> → <span class="pill ok">Approved</span></div><div class="cd">Roles<br><span class="pill ok">Admin</span> <span class="pill wt">Manager</span> <span class="pill">User</span></div></div>
+<div class="cd" style="margin-top:8px">Bookings overview<div class="ch"><i style="height:40%"></i><i style="height:70%"></i><i style="height:55%"></i><i style="height:90%"></i><i style="height:65%"></i><i style="height:80%"></i></div></div></div></div>
+<div class="info"><span class="tag">Full-stack · Jul 2026</span><h3>Resource Hub — Shared Resource Booking System</h3>
+<p class="mu">A full-stack shared resource booking system designed to manage resources with booking and approval workflows, reducing manual scheduling effort.</p>
+<ul><li>5+ types of shared resources</li><li>Booking &amp; approval workflows</li><li>15+ RESTful backend APIs</li><li>Authentication</li><li>Role-based access, 3 roles</li><li>Booking conflict detection</li><li>Notifications &amp; reporting</li><li>Responsive single-page frontend</li><li>Resource cards &amp; status indicators</li><li>Login interface</li><li>Interactive visualization, 4+ charts</li></ul>
+<div class="badges"><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Mongoose</span><span>JWT</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Chart.js</span><span>REST APIs</span></div>
+<div class="btns" style="margin:14px 0 0"><a class="btn s" href="https://github.com/pwnaniket/resourcehub-backend" target="_blank" rel="noopener">GitHub ↗</a></div></div></article>
+
+<article class="proj gl rev rv"><div class="vis" aria-label="Cine Book platform mockup"><div class="mk">
+<div class="tb"><i></i><i></i><i></i><em>Cine Book · Discover</em></div>
+<div class="g3"><div class="pst" style="background:linear-gradient(160deg,#0f766e,#0b1f26)">Movies</div><div class="pst" style="background:linear-gradient(160deg,#0284c7,#0b2433)">Comedy</div><div class="pst" style="background:linear-gradient(160deg,#d97706,#2a1f0b)">Concerts</div></div>
+<div class="g3" style="margin-top:8px;grid-template-columns:1.2fr .8fr"><div class="cd">Select seats<div class="seats" id="seats"></div></div><div class="tk">Digital ticket<div class="ln"></div><div class="ln" style="width:60%"></div><span class="pill ok">Confirmed</span></div></div>
+<div class="cd" style="margin-top:8px">Organizer dashboard · ticket sales · reviews<div class="ch" style="height:34px"><i style="height:50%"></i><i style="height:80%"></i><i style="height:60%"></i><i style="height:95%"></i><i style="height:70%"></i></div></div></div></div>
+<div class="info"><span class="tag">Full-stack · Sep 2026</span><h3>Cine Book — Movies, Comedy &amp; Concert Ticket Booking Platform</h3>
+<p class="mu">A full-stack event discovery and ticket booking platform for movies, stand-up comedy shows, music concerts and live events across India.</p>
+<ul><li>Discovery across 10+ cities</li><li>Current &amp; upcoming listings</li><li>Location-based discovery</li><li>Real-time availability</li><li>Seat booking &amp; digital tickets</li><li>Booking history</li><li>Personalized recommendations</li><li>Organizer &amp; artist dashboards</li><li>Event creation &amp; management</li><li>Ticket sales &amp; revenue tracking</li><li>Reviews &amp; ratings</li><li>5+ event performance metrics</li><li>Zero convenience fees</li><li>Price alerts &amp; waitlists</li><li>Group bookings up to 10 tickets</li><li>Event reminders</li></ul>
+<div class="badges"><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Mongoose</span><span>JWT</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>REST APIs</span><span>Git</span><span>GitHub</span></div></div></article>
+
+<article class="proj gl rv"><div class="vis" aria-label="Resume Builder mockup"><div class="mk">
+<div class="tb"><i></i><i></i><i></i><em>Home · About · Contact</em></div>
+<div class="g3" style="grid-template-columns:.9fr 1.1fr"><div class="cd">Sections<br><span class="pill ok">Education</span><br><span class="pill ok">Skills</span><br><span class="pill ok">Projects</span><br><span class="pill wt">Experience</span><br><span class="pill wt">Contact</span><div class="ln" style="margin-top:10px"></div><div class="ln"></div></div>
+<div class="cd" style="background:#f4f5f8;color:#222"><b>Resume preview</b><div class="ln" style="background:#c9cdd8"></div><div class="ln" style="background:#c9cdd8;width:70%"></div><div class="ln" style="background:#c9cdd8"></div><div class="ln" style="background:#c9cdd8;width:50%"></div><div class="ln" style="background:#c9cdd8"></div></div></div></div></div>
+<div class="info"><span class="tag">Frontend · Nov 2024</span><h3>Resume Builder</h3>
+<p class="mu">A web-based resume builder that allows users to create and manage structured resume sections through a simple and user-friendly interface.</p>
+<ul><li>5+ resume sections</li><li>User-friendly interface</li><li>Home, About &amp; Contact pages</li><li>Resume creation</li><li>Deployed on GitHub Pages</li></ul>
+<div class="badges"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git</span><span>GitHub Pages</span></div>
+<div class="btns" style="margin:14px 0 0"><a class="btn s" href="https://github.com/pwnaniket/ResumeBuilder" target="_blank" rel="noopener">GitHub ↗</a></div></div></article>
+
+<div style="text-align:center"><a class="btn" href="https://github.com/pwnaniket?tab=repositories" target="_blank" rel="noopener">View All Projects ↗</a></div>
+</div></section>
+
+<section id="training"><div class="w"><span class="eyebrow rv">Training</span><h2 class="rv">Experience &amp; training</h2>
+<div class="tm rv"><div class="dt">Jun 2026 – Aug 2026</div><div class="dl"><h4>Summer Training — Advanced Backend Development</h4><p class="mu" style="margin:0 0 12px">Lovely Professional University · Training programme</p>
+<p style="color:#c3c8d6;margin:0 0 14px">Hands-on training in backend development, focused on server-side programming, RESTful APIs, database integration and backend architecture. Built backend applications with Node.js, Express.js and MongoDB.</p>
+<div class="chips"><span class="chip">Server-side programming</span><span class="chip">RESTful APIs</span><span class="chip">Database integration</span><span class="chip">Backend architecture</span><span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">MongoDB</span><span class="chip">Authentication</span><span class="chip">API development</span><span class="chip">Database operations</span><span class="chip">Error handling</span><span class="chip">Testing</span></div></div></div></div></section>
+
+<section id="certifications"><div class="w"><span class="eyebrow rv">Certifications</span><h2 class="rv">Certificates</h2><div class="cert rv">
+<div class="gl"><span class="tag">Sep 2026</span><h4>Exploring Cloud Computing</h4><a class="btn s" style="align-self:flex-start;margin-top:8px" href="https://drive.google.com/file/d/1eqwa-Zp_Xxjl-nP9FFR7zEB5OLtdMNPR/view?usp=drive_link" target="_blank" rel="noopener">View Certificate ↗</a></div>
+<div class="gl"><span class="tag">Aug 2025</span><h4>Programming Using C++</h4><a class="btn s" style="align-self:flex-start;margin-top:8px" href="https://drive.google.com/file/d/1W9dSHsfNKGPz1Ffz6OOq5XmLs69HPWn2/view?usp=drive_link" target="_blank" rel="noopener">View Certificate ↗</a></div></div></div></section>
+
+<section id="education"><div class="w"><span class="eyebrow rv">Education</span><h2 class="rv">Academic background</h2>
+<div class="tm rv"><div class="dt">2024 – 2028</div><div class="dl"><h4>Bachelor of Technology — Computer Science and Engineering</h4><p class="mu" style="margin:0">Lovely Professional University · Phagwara, Punjab<br>CGPA: 6.7</p></div></div>
+<div class="tm rv"><div class="dt">Mar 2022</div><div class="dl"><h4>Intermediate</h4><p class="mu" style="margin:0">J U S R S P+2 High School · Padma, Madhubani, Bihar<br>Percentage: 78.6%</p></div></div>
+<div class="tm rv"><div class="dt">Mar 2020</div><div class="dl"><h4>Matriculation</h4><p class="mu" style="margin:0">J U S R S P High School · Padma, Madhubani, Bihar<br>Percentage: 77.2%</p></div></div></div></section>
+
+<section id="contact"><div class="w"><div class="cta rv"><h2>Let's build something <span class="grad">impactful.</span></h2>
+<p>I'm interested in building practical software, solving challenging problems and continuously improving my development skills. Feel free to connect with me for projects, collaboration or software engineering opportunities.</p>
+<div class="btns"><a class="btn p" href="mailto:aniketpawan09@gmail.com">Email Me</a><a class="btn" href="https://www.linkedin.com/in/aniii-pwn09" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/pwnaniket" target="_blank" rel="noopener">GitHub</a></div>
+<div class="ct"><a href="mailto:aniketpawan09@gmail.com">aniketpawan09@gmail.com</a><a href="tel:+919572899178">9572899178</a></div></div></div></section>
+</main>
+<footer>© 2026 Aniket Pawan — Computer Science student building practical full-stack and backend software.</footer>
+<button id="top" aria-label="Back to top">↑</button>
+
+<script>
+const S={"Programming Languages":["Java","C","C++","Python"],"Web / Development":["HTML","CSS","JavaScript","REST APIs"],"Backend / Database":["Node.js","Express.js","MongoDB","Mongoose"],"Cloud / DevOps":["AWS","Linux"],"Tools":["Git","GitHub","Figma"],"Core CS":["DBMS","Operating Systems","Computer Networks","OOPs"],"Soft Skills":["Problem-Solving","Team Work","Adaptability"]};
+const M={"Java":"Jv","C":"C","C++":"C+","Python":"Py","HTML":"H5","CSS":"C3","JavaScript":"JS","REST APIs":"API","Node.js":"No","Express.js":"Ex","MongoDB":"Mo","Mongoose":"Mg","AWS":"AWS","Linux":"Lx","Git":"Gi","GitHub":"GH","Figma":"Fg","DBMS":"DB","Operating Systems":"OS","Computer Networks":"CN","OOPs":"OO","Problem-Solving":"PS","Team Work":"TW","Adaptability":"Ad"};
+document.getElementById("sk").innerHTML=Object.entries(S).map(([k,v])=>`<div class="gl"><h3>${k}</h3><div class="tl">${v.map(t=>`<span class="t"><b>${M[t]}</b>${t}</span>`).join("")}</div></div>`).join("");
+const se=document.getElementById("seats");const bk=[3,4,12,13,24,25,26,37,38],sl=[45,46];
+for(let i=0;i<40;i++){const e=document.createElement("i");if(bk.includes(i))e.className="x";if(sl.includes(i))e.className="sel";se.appendChild(e)}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(e=>io.observe(e));
+const L=[...document.querySelectorAll("#nl a")],sec=L.map(a=>document.querySelector(a.hash));
+const T=document.getElementById("top");
+function up(){const y=scrollY+120;let c=0;sec.forEach((s,i)=>{if(s.offsetTop<=y)c=i});L.forEach((a,i)=>a.classList.toggle("on",i===c));T.classList.toggle("show",scrollY>600)}
+addEventListener("scroll",up,{passive:true});up();
+T.onclick=()=>scrollTo({top:0,behavior:"smooth"});
+addEventListener("pointermove",e=>{document.body.style.setProperty("--mx",e.clientX+"px");document.body.style.setProperty("--my",e.clientY+"px")},{passive:true});
+</script>
+</body>
+</html>
